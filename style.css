@@ -14,6 +14,10 @@ body {
     font-family: "inter";
 }
 
+.navbar {
+    animation: nav-slide 1s ease-in;
+}
+
 .menu-link {
     text-decoration: none;
     color: var(--Dark-grayish-blue);
@@ -21,6 +25,10 @@ body {
 
 .menu-link:hover {
     color: var(--Soft-red)
+}
+
+.hero {
+    animation: main-slide 1s ease-in;
 }
 
 .hero-text h1 {
@@ -43,6 +51,7 @@ button:hover {
 .article {
     background-color: hsl(240, 100%, 5%);
     color: hsl(36, 100%, 99%);
+    animation: article-slide 1s ease-in;
 }
 
 .article h1 {
@@ -57,6 +66,10 @@ button:hover {
     color:var(--Soft-orange);
 }
 
+.sub-article {
+    animation: subart-slide 1s ease-in;
+}
+
 .sub-article img{
     max-width:120px;
 }
@@ -69,4 +82,54 @@ button:hover {
 .content h2 {
     color: hsl(233, 8%, 79%);
     font-size: 2em;
+}
+
+
+@keyframes nav-border {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes nav-slide {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes article-slide {
+    0% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes main-slide {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes subart-slide {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
