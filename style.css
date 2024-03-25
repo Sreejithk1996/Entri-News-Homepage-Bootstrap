@@ -1,0 +1,72 @@
+:root {
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Soft-orange: hsl(35, 77%, 62%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter";
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+}
+
+.menu-link:hover {
+    color: var(--Soft-red)
+}
+
+.hero-text h1 {
+    font-size:50px;
+    color: black;
+}
+
+button  {
+    background-color:hsl(5, 85%, 63%) ;       
+    color: hsl(36, 100%, 99%) ;      ;     
+    font-weight: 700;      
+    letter-spacing: 0.25em;  
+    border: none;    
+}
+
+button:hover {
+    background-color: black;
+}
+
+.article {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
+.article h1 {
+    color: var(--Soft-orange);
+}
+
+.article-list  .heading {
+    color:white
+}
+
+.article-list  .heading:hover {
+    color:var(--Soft-orange);
+}
+
+.sub-article img{
+    max-width:120px;
+}
+
+.sub1 h3:hover {
+    cursor: pointer;
+    color: var(--Soft-red);
+}
+
+.content h2 {
+    color: hsl(233, 8%, 79%);
+    font-size: 2em;
+}
